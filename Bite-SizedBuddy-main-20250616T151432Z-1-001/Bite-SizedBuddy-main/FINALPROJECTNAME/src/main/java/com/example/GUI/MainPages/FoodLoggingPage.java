@@ -136,7 +136,6 @@ public class FoodLoggingPage {
     }
 
     //Method to get the numerical values of the nutrienst 
-    //Used chatgpt to make this method
     private double parseNutrient(String line) {
         try {
             String[] parts = line.split(":");
@@ -155,7 +154,7 @@ public class FoodLoggingPage {
         String grade = parts[1].trim().toLowerCase(); // Extract and lowercase the grade
         mainPage.getPetHealth().gradeAffectsHealth(grade);
     } catch (Exception e) {
-        // Optionally log or ignore silently
+        
     }
 }
 
